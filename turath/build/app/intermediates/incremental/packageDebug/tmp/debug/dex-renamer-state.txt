@@ -1,7 +1,7 @@
-#Tue Sep 10 07:30:03 EEST 2024
-base.0=D\:\\DEPI\\DEPI-Project\\turath\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=D\:\\DEPI\\DEPI-Project\\turath\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=D\:\\DEPI\\DEPI-Project\\turath\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+#Tue Sep 10 21:06:21 EEST 2024
+base.0=D\:\\DEPI\\login branch\\DEPI-Project\\turath\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=D\:\\DEPI\\login branch\\DEPI-Project\\turath\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=D\:\\DEPI\\login branch\\DEPI-Project\\turath\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=1/classes.dex

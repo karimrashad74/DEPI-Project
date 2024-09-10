@@ -12,7 +12,7 @@ abstract class AppColors {
   static Color textColorHint = const Color(0xffC4C4C4);
 
   // Background Colors
-  static Color bgColor = const Color.fromARGB(255, 26, 10, 10);
+  static Color bgColor = const Color.fromARGB(255, 25, 25, 25);
 
   static LinearGradient cardBgColor = const LinearGradient(
     colors: [Color(0xff000000), Color.fromARGB(255, 129, 127, 127)],
