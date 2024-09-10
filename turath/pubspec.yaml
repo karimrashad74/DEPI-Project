@@ -1,0 +1,47 @@
+name: turath
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^14.2.7
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Fustat
+      fonts:
+        - asset: assets/fonts/Fustat-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Fustat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Fustat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Fustat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Fustat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Fustat-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Fustat-ExtraLight.ttf
+          weight: 200
+
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/core/utils
+  filename: app_assets.dart
+  field_prefix: null
