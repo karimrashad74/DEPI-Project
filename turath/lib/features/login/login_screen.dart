@@ -11,23 +11,58 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  bool _obscureText = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.bgColor,
-      body: Padding(
-        padding: const EdgeInsets.all(30.0),
-        child: SafeArea(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(30.0),
           child: Center(
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  // logo turath
                   Center(
-                    child: SvgPicture.asset(
-                      Assets.imagesLogo,
-                      width: 70.0,
-                      height: 70.0,
+                    child: Container(
+                      padding: const EdgeInsets.all(15),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.transparent,
+                        border: Border.all(
+                          color: AppColors.primaryColor,
+                          width: 1,
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Align(
+                            alignment: Alignment.center,
+                            child: Image.asset(
+                              Assets.imagesLogo,
+                              color: AppColors.primaryColor,
+                              width: 80,
+                              height: 70,
+                            ),
+                          ),
+                          Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              'تُراث',
+                              style: TextStyle(
+                                color: AppColors.textColorPrimary,
+                                fontFamily: 'Fustat',
+                                fontWeight: FontWeight.w800,
+                                fontSize: 25,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   const SizedBox(height: 80.0),
@@ -54,14 +89,25 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextFormField(
                     style: TextStyle(color: AppColors.textColorSecondary),
                     cursorColor: AppColors.primaryColor,
-                    keyboardType: TextInputType.emailAddress,
+                    keyboardType: TextInputType.visiblePassword,
+                    obscureText: _obscureText,
                     decoration: InputDecoration(
                       labelText: 'Password',
                       labelStyle: TextStyle(color: AppColors.textColorHint),
                       prefixIcon: Icon(Icons.lock_outline_rounded,
                           color: AppColors.secondaryColor),
-                      suffixIcon: Icon(Icons.remove_red_eye_outlined,
-                          color: AppColors.secondaryColor),
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                            _obscureText
+                                ? Icons.visibility
+                                : Icons.visibility_off,
+                            color: AppColors.secondaryColor),
+                        onPressed: () {
+                          setState(() {
+                            _obscureText = !_obscureText;
+                          });
+                        },
+                      ),
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: AppColors.borderColor),
                         borderRadius: BorderRadius.circular(24),
