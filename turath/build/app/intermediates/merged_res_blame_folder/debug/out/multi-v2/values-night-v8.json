@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.turath.app-mergeDebugResources-25:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.depi.turath.app-mergeDebugResources-24:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\DEPI\\sign up branch\\DEPI-Project\\turath\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\DEPI-Project\\turath\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

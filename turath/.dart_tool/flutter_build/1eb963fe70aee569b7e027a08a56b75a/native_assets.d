@@ -1,0 +1,1 @@
+ D:\\DEPI-Project\\turath\\.dart_tool\\flutter_build\\1eb963fe70aee569b7e027a08a56b75a\\native_assets.yaml: 
