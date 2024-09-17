@@ -212,6 +212,18 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "responsive_navigation_bar",
+      "rootUri": "file:///C:/Users/win%2010/AppData/Local/Pub/Cache/hosted/pub.dev/responsive_navigation_bar-5.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "scroll_snap_list",
+      "rootUri": "file:///C:/Users/win%2010/AppData/Local/Pub/Cache/hosted/pub.dev/scroll_snap_list-0.9.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/src/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -314,7 +326,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-09-17T03:44:28.936822Z",
+  "generated": "2024-09-17T04:28:21.961331Z",
   "generator": "pub",
   "generatorVersion": "3.5.3",
   "flutterRoot": "file:///C:/src/flutter",
