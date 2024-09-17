@@ -3,7 +3,6 @@ import 'package:turath/features/login/login_screen.dart';
 import 'package:turath/features/on_boarding/onboarding_screen.dart';
 import 'package:turath/features/sign-up/signup_screen.dart';
 import 'package:turath/features/splash/splash_screen.dart';
-// import 'package:turath/features/splash/splash_screen.dart';
 
 final GoRouter router = GoRouter(routes: [
   GoRoute(

@@ -15,7 +15,10 @@ abstract class AppColors {
   static Color bgColor = const Color.fromARGB(255, 25, 25, 25);
 
   static LinearGradient cardBgColor = const LinearGradient(
-    colors: [Color(0xff000000), Color.fromARGB(255, 129, 127, 127)],
+    colors: [
+      Color.fromARGB(255, 43, 42, 42),
+      Color.fromARGB(255, 129, 127, 127)
+    ],
     begin: Alignment.centerLeft,
     end: Alignment.topRight,
   );
