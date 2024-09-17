@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:turath/features/login/login_screen.dart';
+import 'package:turath/features/on_boarding/onboarding_screen.dart';
 
 class SconedSplachScreen extends StatefulWidget {
   const SconedSplachScreen({super.key});
@@ -18,7 +18,7 @@ class _SconedSplachScreenState extends State<SconedSplachScreen> {
         () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const LoginScreen(),
+                builder: (context) => const OnboardingScreen(),
               ),
             ));
   }
