@@ -18,10 +18,10 @@ com.depi.turath.app-core-1.13.1-16 C:\Users\win 10\.gradle\caches\transforms-3\c
 com.depi.turath.app-lifecycle-runtime-2.7.0-17 C:\Users\win 10\.gradle\caches\transforms-3\c8996eb6ce8efabee1883fe1486006c9\transformed\lifecycle-runtime-2.7.0\res
 com.depi.turath.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-18 C:\Users\win 10\.gradle\caches\transforms-3\ca2eed4266fd24517e583e6618aa3924\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
 com.depi.turath.app-jetified-tracing-1.2.0-19 C:\Users\win 10\.gradle\caches\transforms-3\fee79d0d8ef3af5dbc14ef6d22d028cf\transformed\jetified-tracing-1.2.0\res
-com.depi.turath.app-debug-20 D:\DEPI-Project\turath\android\app\src\debug\res
-com.depi.turath.app-main-21 D:\DEPI-Project\turath\android\app\src\main\res
-com.depi.turath.app-pngs-22 D:\DEPI-Project\turath\build\app\generated\res\pngs\debug
-com.depi.turath.app-resValues-23 D:\DEPI-Project\turath\build\app\generated\res\resValues\debug
-com.depi.turath.app-packageDebugResources-24 D:\DEPI-Project\turath\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.depi.turath.app-packageDebugResources-25 D:\DEPI-Project\turath\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.depi.turath.app-merged_res-26 D:\DEPI-Project\turath\build\app\intermediates\merged_res\debug
+com.depi.turath.app-debug-20 D:\DEPI-Graduation-project\branches\DEPI-Project\turath\android\app\src\debug\res
+com.depi.turath.app-main-21 D:\DEPI-Graduation-project\branches\DEPI-Project\turath\android\app\src\main\res
+com.depi.turath.app-pngs-22 D:\DEPI-Graduation-project\branches\DEPI-Project\turath\build\app\generated\res\pngs\debug
+com.depi.turath.app-resValues-23 D:\DEPI-Graduation-project\branches\DEPI-Project\turath\build\app\generated\res\resValues\debug
+com.depi.turath.app-packageDebugResources-24 D:\DEPI-Graduation-project\branches\DEPI-Project\turath\build\app\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.depi.turath.app-packageDebugResources-25 D:\DEPI-Graduation-project\branches\DEPI-Project\turath\build\app\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.depi.turath.app-merged_res-26 D:\DEPI-Graduation-project\branches\DEPI-Project\turath\build\app\intermediates\merged_res\debug
