@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:turath/core/utils/app_assets.dart';
 import 'package:turath/core/utils/app_colors.dart';
+import 'package:turath/features/home/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -137,7 +138,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.circular(25),
                     ),
                     child: MaterialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HomeScreen(),
+                          ),
+                        );
+                      },
                       child: Text(
                         'Sign in',
                         style: TextStyle(

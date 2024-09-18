@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:turath/core/utils/app_colors.dart';
 
 class ProfileScreen extends StatefulWidget {
-  ProfileScreen({super.key});
+  const ProfileScreen({super.key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();

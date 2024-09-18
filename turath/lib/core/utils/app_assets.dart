@@ -2,6 +2,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for images3dRenderedPhotoAncientBooksAdornLibraryCarefullyArrangedWithClassics115803023026
+  /// assets/images/3d-rendered-photo-ancient-books-adorn-library-carefully-arranged-with-classics_1158030-23026.jpg
+  static const String images3dRenderedPhotoAncientBooksAdornLibraryCarefullyArrangedWithClassics115803023026 = "assets/images/3d-rendered-photo-ancient-books-adorn-library-carefully-arranged-with-classics_1158030-23026.jpg";
+
   /// Assets for imagesGoogle
   /// assets/images/google.svg
   static const String imagesGoogle = "assets/images/google.svg";
@@ -45,5 +49,25 @@ class Assets {
   /// Assets for imagesSp4
   /// assets/images/sp4.jpg
   static const String imagesSp4 = "assets/images/sp4.jpg";
+
+  /// Assets for imagesSwords
+  /// assets/images/swords.svg
+  static const String imagesSwords = "assets/images/swords.svg";
+
+  /// Assets for imagesTempleTombStructureFromAncientEgypt232151611694
+  /// assets/images/temple-tomb-structure-from-ancient-egypt_23-2151611694.avif
+  static const String imagesTempleTombStructureFromAncientEgypt232151611694 = "assets/images/temple-tomb-structure-from-ancient-egypt_23-2151611694.avif";
+
+  /// Assets for imagesTempleTombStructureFromAncientEgypt232151611695
+  /// assets/images/temple-tomb-structure-from-ancient-egypt_23-2151611695.avif
+  static const String imagesTempleTombStructureFromAncientEgypt232151611695 = "assets/images/temple-tomb-structure-from-ancient-egypt_23-2151611695.avif";
+
+  /// Assets for imagesViewAncientTempleTombFromAncientEgyptianTimes232151611729
+  /// assets/images/view-ancient-temple-tomb-from-ancient-egyptian-times_23-2151611729.avif
+  static const String imagesViewAncientTempleTombFromAncientEgyptianTimes232151611729 = "assets/images/view-ancient-temple-tomb-from-ancient-egyptian-times_23-2151611729.avif";
+
+  /// Assets for imagesWars
+  /// assets/images/wars.jpg
+  static const String imagesWars = "assets/images/wars.jpg";
 }
 

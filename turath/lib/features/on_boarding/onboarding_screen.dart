@@ -52,7 +52,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 // height: double.infinity,
                 child: Stack(
                   children: [
-                    Container(
+                    SizedBox(
                       width: double.infinity,
                       height: double.infinity,
                       child: _buildPage(
@@ -155,8 +155,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             transform: Matrix4.identity()..scale(value, value),
             alignment: Alignment.center,
             child: Container(
-              // width: double.infinity,
-              // height: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.black87,
                 image: DecorationImage(
