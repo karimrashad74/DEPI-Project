@@ -8,10 +8,10 @@ class NavigationBarBottom extends StatelessWidget {
   final Function(int) onTabChange;
 
   const NavigationBarBottom({
-    Key? key,
+    super.key,
     required this.selectedIndex,
     required this.onTabChange,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
