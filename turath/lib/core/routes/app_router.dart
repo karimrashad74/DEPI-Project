@@ -7,7 +7,7 @@ import 'package:turath/features/splash/splash_screen.dart';
 final GoRouter router = GoRouter(routes: [
   GoRoute(
     path: '/',
-    builder: (context, state) => const SplashScreen(),
+    builder: (context, state) => SplashScreen(),
   ),
   GoRoute(
     path: '/on_boarding',

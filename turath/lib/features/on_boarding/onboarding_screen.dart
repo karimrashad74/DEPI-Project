@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:turath/core/utils/app_assets.dart';
 import 'package:turath/core/utils/app_colors.dart';
+import 'package:turath/core/utils/app_text_style.dart';
 import 'package:turath/features/home/home_screen.dart';
 import 'package:turath/features/login/login_screen.dart';
 
@@ -90,10 +91,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               },
                               child: Text(
                                 "Let's Start",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: AppColors.secondaryColor),
+                                style: AppTextStyle.headLineW500S24
+                                    .copyWith(color: AppColors.secondaryColor),
                               ),
                             ),
                             const SizedBox(height: 20),
@@ -115,10 +114,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               },
                               child: Text(
                                 "Log in",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: AppColors.secondaryColor),
+                                style: AppTextStyle.headLineW500S24
+                                    .copyWith(color: AppColors.secondaryColor),
                               ),
                             ),
                           ],
@@ -169,16 +166,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   const SizedBox(height: 250),
                   Text(
                     title,
-                    style: TextStyle(
-                        color: AppColors.textColorPrimary,
-                        fontSize: 40,
-                        fontWeight: FontWeight.w900),
+                    style: AppTextStyle.headLineW800S48.copyWith(
+                      color: AppColors.textColorPrimary,
+                    ),
                   ),
                   Text(
                     description,
-                    style: TextStyle(
+                    style: AppTextStyle.bodyTextW600S24.copyWith(
                       color: AppColors.textColorPrimary,
-                      fontSize: 20,
                     ),
                   ),
                 ],
