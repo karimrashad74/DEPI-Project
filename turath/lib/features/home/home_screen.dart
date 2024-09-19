@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:scroll_snap_list/scroll_snap_list.dart';
 import 'package:turath/core/utils/app_assets.dart';
 import 'package:turath/core/utils/app_colors.dart';
+import 'package:turath/core/utils/app_text_style.dart';
 import 'package:turath/features/bazar/bazar_screen.dart';
 import 'package:turath/features/nav-bar/navigation_bar.dart';
 import 'package:turath/features/profile/profile_screen.dart';
@@ -60,22 +61,16 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
             child: ListTile(
-              title: Text(
-                "Hello, Enjoy your day",
-                style: TextStyle(
-                    color: AppColors.textColorPrimary,
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold),
-              ),
-              subtitle: Text(
-                "Let's Go",
-                style:
-                    TextStyle(color: AppColors.textColorPrimary, fontSize: 16),
-              ),
+              title: Text("Hello, Enjoy your day",
+                  style: AppTextStyle.headLineW500S32
+                      .copyWith(color: AppColors.textColorPrimary)),
+              subtitle: Text("Let's Go",
+                  style: AppTextStyle.headLine.copyWith(
+                      color: AppColors.textColorPrimary, fontSize: 18)),
               trailing: Icon(
                 Icons.notifications,
                 size: 38,
-                color: AppColors.textColorPrimary,
+                color: AppColors.secondaryColor,
               ),
             ),
           ),
@@ -158,13 +153,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const SizedBox(height: 250),
-                  Text(
-                    category.title,
-                    style: TextStyle(
-                        color: AppColors.textColorPrimary,
-                        fontSize: 40,
-                        fontWeight: FontWeight.w900),
-                  ),
+                  Text(category.title,
+                      style: AppTextStyle.headLineW700S48
+                          .copyWith(color: AppColors.textColorPrimary)),
                   Container(
                     child: category.description,
                   ),

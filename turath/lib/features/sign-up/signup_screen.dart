@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:turath/core/utils/app_assets.dart';
 import 'package:turath/core/utils/app_colors.dart';
+import 'package:turath/core/utils/app_text_style.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -51,15 +52,9 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                           Align(
                             alignment: Alignment.center,
-                            child: Text(
-                              'تُراث',
-                              style: TextStyle(
-                                color: AppColors.textColorPrimary,
-                                fontFamily: 'Fustat',
-                                fontWeight: FontWeight.w800,
-                                fontSize: 25,
-                              ),
-                            ),
+                            child: Text('تُراث',
+                                style: AppTextStyle.arabicTextW800S24.copyWith(
+                                    color: AppColors.textColorPrimary)),
                           ),
                         ],
                       ),
@@ -67,12 +62,14 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 80.0),
                   TextFormField(
-                    style: TextStyle(color: AppColors.textColorSecondary),
+                    style: AppTextStyle.headLine
+                        .copyWith(color: AppColors.textColorSecondary),
                     cursorColor: AppColors.primaryColor,
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
                       labelText: 'Full Name',
-                      labelStyle: TextStyle(color: AppColors.textColorHint),
+                      labelStyle: AppTextStyle.bodyText
+                          .copyWith(color: AppColors.textColorHint),
                       prefixIcon: Icon(Icons.person_outline,
                           color: AppColors.secondaryColor),
                       enabledBorder: OutlineInputBorder(
@@ -87,12 +84,14 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 20.0),
                   TextFormField(
-                    style: TextStyle(color: AppColors.textColorSecondary),
+                    style: AppTextStyle.headLine
+                        .copyWith(color: AppColors.textColorSecondary),
                     cursorColor: AppColors.primaryColor,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       labelText: 'Phone Number',
-                      labelStyle: TextStyle(color: AppColors.textColorHint),
+                      labelStyle: AppTextStyle.bodyText
+                          .copyWith(color: AppColors.textColorHint),
                       prefixIcon: Icon(Icons.phone_outlined,
                           color: AppColors.secondaryColor),
                       enabledBorder: OutlineInputBorder(
@@ -107,12 +106,14 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 20.0),
                   TextFormField(
-                    style: TextStyle(color: AppColors.textColorSecondary),
+                    style: AppTextStyle.headLine
+                        .copyWith(color: AppColors.textColorSecondary),
                     cursorColor: AppColors.primaryColor,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       labelText: 'E-mail',
-                      labelStyle: TextStyle(color: AppColors.textColorHint),
+                      labelStyle: AppTextStyle.bodyText
+                          .copyWith(color: AppColors.textColorHint),
                       prefixIcon: Icon(Icons.email_outlined,
                           color: AppColors.secondaryColor),
                       enabledBorder: OutlineInputBorder(
@@ -127,13 +128,15 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 20.0),
                   TextFormField(
-                    style: TextStyle(color: AppColors.textColorSecondary),
+                    style: AppTextStyle.headLine
+                        .copyWith(color: AppColors.textColorSecondary),
                     cursorColor: AppColors.primaryColor,
                     keyboardType: TextInputType.visiblePassword,
                     obscureText: _obscurePass,
                     decoration: InputDecoration(
                       labelText: 'Password',
-                      labelStyle: TextStyle(color: AppColors.textColorHint),
+                      labelStyle: AppTextStyle.bodyText
+                          .copyWith(color: AppColors.textColorHint),
                       prefixIcon: Icon(Icons.lock_outline_rounded,
                           color: AppColors.secondaryColor),
                       suffixIcon: IconButton(
@@ -160,13 +163,15 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 20.0),
                   TextFormField(
-                    style: TextStyle(color: AppColors.textColorSecondary),
+                    style: AppTextStyle.headLine
+                        .copyWith(color: AppColors.textColorSecondary),
                     cursorColor: AppColors.primaryColor,
                     keyboardType: TextInputType.visiblePassword,
                     obscureText: _obscureConfirmPass,
                     decoration: InputDecoration(
                       labelText: 'Confirm Password',
-                      labelStyle: TextStyle(color: AppColors.textColorHint),
+                      labelStyle: AppTextStyle.bodyText
+                          .copyWith(color: AppColors.textColorHint),
                       prefixIcon: Icon(Icons.lock_outline_rounded,
                           color: AppColors.secondaryColor),
                       suffixIcon: IconButton(
@@ -202,10 +207,9 @@ class _SignupScreenState extends State<SignupScreen> {
                       onPressed: () {},
                       child: Text(
                         'Sign Up',
-                        style: TextStyle(
-                            color: AppColors.textColorPrimary,
-                            fontSize: 23,
-                            fontWeight: FontWeight.bold),
+                        style: AppTextStyle.headLineW600S32.copyWith(
+                          color: AppColors.textColorPrimary,
+                        ),
                       ),
                     ),
                   ),
@@ -213,16 +217,15 @@ class _SignupScreenState extends State<SignupScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "Already have account?",
-                        style: TextStyle(color: AppColors.textColorPrimary),
-                      ),
+                      Text("Already have account?",
+                          style: AppTextStyle.bodyTextW500S24
+                              .copyWith(color: AppColors.textColorPrimary)),
                       TextButton(
                         onPressed: () {},
-                        child: Text(
-                          'Sign In',
-                          style: TextStyle(color: AppColors.textColorSecondary),
-                        ),
+                        child: Text('Sign In',
+                            style: AppTextStyle.bodyText.copyWith(
+                                fontSize: 20,
+                                color: AppColors.textColorSecondary)),
                       ),
                     ],
                   ),

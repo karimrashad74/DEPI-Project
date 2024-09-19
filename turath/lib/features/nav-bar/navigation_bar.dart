@@ -19,6 +19,7 @@ class NavigationBarBottom extends StatelessWidget {
       selectedIndex: selectedIndex,
       onTabChange: onTabChange,
       textStyle: TextStyle(
+        fontFamily: "EBGaramond",
         color: AppColors.textColorPrimary,
         fontWeight: FontWeight.bold,
       ),

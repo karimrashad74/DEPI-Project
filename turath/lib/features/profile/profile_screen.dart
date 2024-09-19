@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:turath/core/utils/app_colors.dart';
+import 'package:turath/core/utils/app_text_style.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -25,29 +26,24 @@ class _ProfileScreenState extends State<ProfileScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Text(
-                'My Profile',
-                style:
-                    TextStyle(color: AppColors.textColorPrimary, fontSize: 30),
-              ),
+              Text('My Profile',
+                  style: AppTextStyle.headLineW700S32
+                      .copyWith(color: AppColors.textColorPrimary)),
               const SizedBox(
                 height: 50,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text(
-                    '$saved',
-                    style: TextStyle(color: AppColors.textColorSecondary),
-                  ),
-                  Text(
-                    '$posts',
-                    style: TextStyle(color: AppColors.textColorSecondary),
-                  ),
-                  Text(
-                    '$share',
-                    style: TextStyle(color: AppColors.textColorSecondary),
-                  ),
+                  Text('$saved',
+                      style: AppTextStyle.bodyTextW400S18
+                          .copyWith(color: AppColors.textColorSecondary)),
+                  Text('$posts',
+                      style: AppTextStyle.bodyTextW400S18
+                          .copyWith(color: AppColors.textColorSecondary)),
+                  Text('$share',
+                      style: AppTextStyle.bodyTextW400S18
+                          .copyWith(color: AppColors.textColorSecondary)),
                 ],
               ),
               const SizedBox(
@@ -58,18 +54,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 children: [
                   Text(
                     'Saved',
-                    style: TextStyle(
-                        color: AppColors.textColorPrimary, fontSize: 20),
+                    style: AppTextStyle.bodyTextW600S24.copyWith(
+                        color: AppColors.textColorPrimary, fontSize: 24),
                   ),
                   Text(
                     'Posts',
-                    style: TextStyle(
-                        color: AppColors.textColorPrimary, fontSize: 20),
+                    style: AppTextStyle.bodyTextW600S24.copyWith(
+                        color: AppColors.textColorPrimary, fontSize: 24),
                   ),
                   Text(
                     'Share',
-                    style: TextStyle(
-                        color: AppColors.textColorPrimary, fontSize: 20),
+                    style: AppTextStyle.bodyTextW600S24.copyWith(
+                        color: AppColors.textColorPrimary, fontSize: 24),
                   ),
                 ],
               ),
@@ -117,10 +113,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                             Text(
                               'Settings',
-                              style: TextStyle(
-                                color: AppColors.textColorPrimary,
-                                fontSize: 22,
-                              ),
+                              style: AppTextStyle.headLineW600S13.copyWith(
+                                  color: AppColors.textColorPrimary,
+                                  fontSize: 24),
                             ),
                           ],
                         ),
@@ -172,10 +167,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                             Text(
                               'About Us',
-                              style: TextStyle(
-                                color: AppColors.textColorPrimary,
-                                fontSize: 22,
-                              ),
+                              style: AppTextStyle.headLineW600S13.copyWith(
+                                  color: AppColors.textColorPrimary,
+                                  fontSize: 24),
                             ),
                           ],
                         ),
@@ -227,10 +221,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                             Text(
                               'Saved Cards',
-                              style: TextStyle(
-                                color: AppColors.textColorPrimary,
-                                fontSize: 22,
-                              ),
+                              style: AppTextStyle.headLineW600S13.copyWith(
+                                  color: AppColors.textColorPrimary,
+                                  fontSize: 24),
                             ),
                           ],
                         ),
@@ -282,10 +275,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                             Text(
                               'Cart',
-                              style: TextStyle(
-                                color: AppColors.textColorPrimary,
-                                fontSize: 22,
-                              ),
+                              style: AppTextStyle.headLineW600S13.copyWith(
+                                  color: AppColors.textColorPrimary,
+                                  fontSize: 24),
                             ),
                           ],
                         ),
@@ -333,10 +325,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                             Text(
                               'Logout',
-                              style: TextStyle(
-                                color: AppColors.errorColor,
-                                fontSize: 22,
-                              ),
+                              style: AppTextStyle.headLineW600S13.copyWith(
+                                  color: AppColors.textColorPrimary,
+                                  fontSize: 24),
                             ),
                           ],
                         ),

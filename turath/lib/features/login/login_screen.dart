@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:turath/core/utils/app_assets.dart';
 import 'package:turath/core/utils/app_colors.dart';
+import 'package:turath/core/utils/app_text_style.dart';
 import 'package:turath/features/home/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -54,12 +55,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             alignment: Alignment.center,
                             child: Text(
                               'تُراث',
-                              style: TextStyle(
-                                color: AppColors.textColorPrimary,
-                                fontFamily: 'Fustat',
-                                fontWeight: FontWeight.w800,
-                                fontSize: 25,
-                              ),
+                              style: AppTextStyle.arabicTextW800S24
+                                  .copyWith(color: AppColors.textColorPrimary),
                             ),
                           ),
                         ],
@@ -68,12 +65,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 80.0),
                   TextFormField(
-                    style: TextStyle(color: AppColors.textColorSecondary),
+                    style: AppTextStyle.headLine
+                        .copyWith(color: AppColors.textColorSecondary),
                     cursorColor: AppColors.primaryColor,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       labelText: 'E-mail',
-                      labelStyle: TextStyle(color: AppColors.textColorHint),
+                      labelStyle: AppTextStyle.bodyText
+                          .copyWith(color: AppColors.textColorHint),
                       prefixIcon: Icon(Icons.email_outlined,
                           color: AppColors.secondaryColor),
                       enabledBorder: OutlineInputBorder(
@@ -88,13 +87,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 20.0),
                   TextFormField(
-                    style: TextStyle(color: AppColors.textColorSecondary),
+                    style: AppTextStyle.headLine
+                        .copyWith(color: AppColors.textColorSecondary),
                     cursorColor: AppColors.primaryColor,
                     keyboardType: TextInputType.visiblePassword,
                     obscureText: _obscureText,
                     decoration: InputDecoration(
                       labelText: 'Password',
-                      labelStyle: TextStyle(color: AppColors.textColorHint),
+                      labelStyle: AppTextStyle.bodyText
+                          .copyWith(color: AppColors.textColorHint),
                       prefixIcon: Icon(Icons.lock_outline_rounded,
                           color: AppColors.secondaryColor),
                       suffixIcon: IconButton(
@@ -124,10 +125,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     alignment: Alignment.bottomCenter,
                     child: TextButton(
                       onPressed: () {},
-                      child: Text(
-                        'Forget Password?',
-                        style: TextStyle(color: AppColors.textColorPrimary),
-                      ),
+                      child: Text('Forget Password?',
+                          style: AppTextStyle.bodyText
+                              .copyWith(color: AppColors.textColorPrimary)),
                     ),
                   ),
                   const SizedBox(height: 20.0),
@@ -148,10 +148,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       child: Text(
                         'Sign in',
-                        style: TextStyle(
-                            color: AppColors.textColorPrimary,
-                            fontSize: 23,
-                            fontWeight: FontWeight.bold),
+                        style: AppTextStyle.headLineW600S32.copyWith(
+                          color: AppColors.textColorPrimary,
+                        ),
                       ),
                     ),
                   ),
@@ -160,12 +159,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     alignment: Alignment.bottomCenter,
                     child: TextButton(
                       onPressed: () {},
-                      child: Text(
-                        'OR',
-                        style: TextStyle(
-                            color: AppColors.textColorPrimary,
-                            fontWeight: FontWeight.bold),
-                      ),
+                      child: Text('OR',
+                          style: AppTextStyle.bodyText.copyWith(
+                              color: AppColors.textColorPrimary,
+                              fontWeight: FontWeight.bold)),
                     ),
                   ),
                   const SizedBox(height: 5.0),
@@ -190,10 +187,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             height: 25.0,
                           ),
                           const SizedBox(width: 10.0),
-                          Text(
-                            'Sign in with Gmail',
-                            style: TextStyle(color: AppColors.textColorPrimary),
-                          ),
+                          Text('Sign in with Gmail',
+                              style: AppTextStyle.headLineW500S24
+                                  .copyWith(color: AppColors.textColorPrimary)),
                         ],
                       ),
                     ),
@@ -204,16 +200,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "Don't you have an account?",
-                        style: TextStyle(color: AppColors.textColorPrimary),
-                      ),
+                      Text("Don't you have an account?",
+                          style: AppTextStyle.bodyText
+                              .copyWith(color: AppColors.textColorPrimary)),
                       TextButton(
                         onPressed: () {},
-                        child: Text(
-                          'Sign Up',
-                          style: TextStyle(color: AppColors.textColorSecondary),
-                        ),
+                        child: Text('Sign Up',
+                            style: AppTextStyle.bodyText.copyWith(
+                                color: AppColors.textColorSecondary,
+                                fontWeight: FontWeight.bold)),
                       ),
                     ],
                   ),
