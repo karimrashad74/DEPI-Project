@@ -1,13 +1,19 @@
 import 'package:go_router/go_router.dart';
+import 'package:turath/features/home/home_screen.dart';
 import 'package:turath/features/login/login_screen.dart';
-import 'package:turath/features/on_boarding/onboarding_screen.dart';
+import 'package:turath/features/on_boarding/presintation/views/onboarding_screen.dart';
 import 'package:turath/features/sign-up/signup_screen.dart';
-import 'package:turath/features/splash/splash_screen.dart';
+import 'package:turath/features/splash/presintation/views/sconed_splach_screen.dart';
+import 'package:turath/features/splash/presintation/views/splash_screen.dart';
 
 final GoRouter router = GoRouter(routes: [
   GoRoute(
     path: '/',
-    builder: (context, state) => SplashScreen(),
+    builder: (context, state) => const SplashScreen(),
+  ),
+  GoRoute(
+    path: '/SconedSplachScreen',
+    builder: (context, state) => const SconedSplachScreen(),
   ),
   GoRoute(
     path: '/on_boarding',
@@ -20,5 +26,9 @@ final GoRouter router = GoRouter(routes: [
   GoRoute(
     path: '/signup',
     builder: (context, state) => const SignupScreen(),
+  ),
+  GoRoute(
+    path: '/homeScreen',
+    builder: (context, state) => const HomeScreen(),
   ),
 ]);

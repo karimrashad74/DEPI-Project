@@ -1,11 +1,11 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'package:turath/core/functions/navigation.dart';
 import 'package:turath/core/utils/app_assets.dart';
-import 'package:turath/features/splash/sconed_splach_screen.dart';
+import 'package:turath/core/utils/app_colors.dart';
 
 class SplashScreen extends StatefulWidget {
-  SplashScreen({super.key});
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -14,15 +14,13 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        customNavigate(context, '/SconedSplachScreen');
+      },
+    );
     super.initState();
-    Timer(
-        Duration(seconds: 2),
-        () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => SconedSplachScreen(),
-              ),
-            ));
   }
 
   @override
@@ -30,10 +28,12 @@ class _SplashScreenState extends State<SplashScreen> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Color(0xff1c1c1c),
+          backgroundColor: AppColors.bgColor,
           body: Center(
             child: Image.asset(Assets.imagesLogo,
-                color: Color(0xffEDE4DD), width: 350, height: double.infinity),
+                color: AppColors.textColorPrimary,
+                width: 350,
+                height: double.infinity),
           ),
         ));
   }
