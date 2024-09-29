@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:turath/core/database/cache/cache_helper.dart';
+import 'package:turath/core/services/service_locator.dart';
 import 'package:turath/core/utils/app_colors.dart';
 import 'package:turath/core/utils/app_text_style.dart';
 import 'package:turath/features/splash/presintation/view-model/splash_view_model.dart';
@@ -17,7 +18,7 @@ class _SconedSplachScreenState extends State<SconedSplachScreen> {
   @override
   void initState() {
     bool isOnboardingVisited =
-        CacheHelper().getData(key: "isOnboardingVisited") ?? false;
+        getIt<CacheHelper>().getData(key: "isOnboardingVisited") ?? false;
     if (isOnboardingVisited == true) {
       splashViewModel = SplashViewModel(context);
       splashViewModel.startSplashTimer('/login');

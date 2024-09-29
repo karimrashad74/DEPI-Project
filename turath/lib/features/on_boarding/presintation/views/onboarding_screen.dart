@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:turath/core/database/cache/cache_helper.dart';
 import 'package:turath/core/functions/navigation.dart';
+import 'package:turath/core/services/service_locator.dart';
 import 'package:turath/core/utils/app_colors.dart';
 import 'package:turath/features/on_boarding/presintation/view-model/onboarding_view_model.dart';
 import 'package:turath/features/on_boarding/presintation/views/on_boarding_page.dart';
@@ -45,11 +46,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 description: page.description,
                 pageIndex: pages.indexOf(page),
                 onLogInPressed: () {
-                  CacheHelper()
+                  getIt<CacheHelper>()
                       .saveData(key: "isOnboardingVisited", value: true);
                   customReplacementNavigate(context, '/login');
                 },
                 onSignUpPressed: () {
+                  getIt<CacheHelper>()
+                      .saveData(key: "isOnboardingVisited", value: true);
                   customReplacementNavigate(context, '/signup');
                 },
               );
