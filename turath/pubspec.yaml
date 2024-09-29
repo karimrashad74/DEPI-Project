@@ -16,6 +16,7 @@ dependencies:
   provider: ^6.1.2
   responsive_navigation_bar: ^5.0.2
   scroll_snap_list: 0.9.1
+  shared_preferences: ^2.3.2
 
 dev_dependencies:
   flutter_launcher_icons: ^0.10.0

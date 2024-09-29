@@ -7,16 +7,16 @@ class OnBoardingPage extends StatelessWidget {
   final String title;
   final String description;
   final int pageIndex;
-  final VoidCallback onStartPressed;
-  final VoidCallback onLoginPressed;
+  final VoidCallback onLogInPressed;
+  final VoidCallback onSignUpPressed;
 
   const OnBoardingPage({
     required this.image,
     required this.title,
     required this.description,
     required this.pageIndex,
-    required this.onStartPressed,
-    required this.onLoginPressed,
+    required this.onLogInPressed,
+    required this.onSignUpPressed,
     super.key,
   });
 
@@ -59,7 +59,7 @@ class OnBoardingPage extends StatelessWidget {
                         horizontal: 20, vertical: 15),
                     textStyle: const TextStyle(fontSize: 18),
                   ),
-                  onPressed: onStartPressed,
+                  onPressed: onLogInPressed,
                   child: Text(
                     "Let's Start",
                     style: AppTextStyle.headLineW500S24
@@ -75,9 +75,9 @@ class OnBoardingPage extends StatelessWidget {
                         horizontal: 20, vertical: 15),
                     textStyle: const TextStyle(fontSize: 18),
                   ),
-                  onPressed: onLoginPressed,
+                  onPressed: onSignUpPressed,
                   child: Text(
-                    "Log in",
+                    "Create Account",
                     style: AppTextStyle.headLineW500S24
                         .copyWith(color: AppColors.secondaryColor),
                   ),

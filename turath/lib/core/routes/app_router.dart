@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
 import 'package:turath/features/home/home_screen.dart';
-import 'package:turath/features/login/login_screen.dart';
+import 'package:turath/features/auth/login_screen.dart';
 import 'package:turath/features/on_boarding/presintation/views/onboarding_screen.dart';
-import 'package:turath/features/sign-up/signup_screen.dart';
+import 'package:turath/features/auth/signup_screen.dart';
 import 'package:turath/features/splash/presintation/views/sconed_splach_screen.dart';
 import 'package:turath/features/splash/presintation/views/splash_screen.dart';
 

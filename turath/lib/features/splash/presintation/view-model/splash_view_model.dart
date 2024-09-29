@@ -8,7 +8,7 @@ class SplashViewModel {
 
   void startSplashTimer(String nextRoute) {
     Future.delayed(const Duration(seconds: 2), () {
-      customNavigate(context, nextRoute);
+      customReplacementNavigate(context, nextRoute);
     });
   }
 }
