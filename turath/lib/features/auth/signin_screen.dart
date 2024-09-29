@@ -5,14 +5,14 @@ import 'package:turath/core/utils/app_assets.dart';
 import 'package:turath/core/utils/app_colors.dart';
 import 'package:turath/core/utils/app_text_style.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class SigninScreen extends StatefulWidget {
+  const SigninScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<SigninScreen> createState() => _SigninScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SigninScreenState extends State<SigninScreen> {
   bool _obscureText = true;
 
   @override
